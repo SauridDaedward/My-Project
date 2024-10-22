@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <script type="module" src="/src/main.jsx"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">Darius Edwards</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h1>Hello, I'm Darius Edwards</h1>
+      <p>Senior IT student at Kean University with a passion for web development and game design.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <!-- Add project cards here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <h2>My Resume</h2>
+      <p>Download my <a href="#">resume</a>.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2024 Darius Edwards. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>

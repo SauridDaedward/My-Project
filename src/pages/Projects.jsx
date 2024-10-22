@@ -11,7 +11,7 @@ const projects = [
     title: 'Tic Tac Toe Game',
     description: 'A Halloween-themed Tic Tac Toe game built with HTML, CSS, and JavaScript.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://github.com/yourusername/tic-tac-toe'
+    link: 'https://github.com/SauridDaedward/TicTacToe'
   },
   {
     title: 'Chatbot Project',
