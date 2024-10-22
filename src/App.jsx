@@ -1,5 +1,6 @@
 // src/App.jsx
 import React from 'react';
+import './index.css'; // Ensure this is correct
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
