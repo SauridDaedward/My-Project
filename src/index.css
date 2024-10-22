@@ -1,38 +1,122 @@
-/* src/index.css */
+
+/* IT Company Theme Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  line-height: 1.6;
 }
 
-main {
-  padding: 20px;
-}
-
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  background-color: #333;
-  padding: 15px 0;
+.navbar {
+  background-color: #00264d;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar a {
   color: white;
+  padding: 0.75em 1.5em;
   text-decoration: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  background-color: #004080;
+  transition: background-color 0.3s ease;
 }
 
-footer {
-  background-color: #333;
+.hero {
+  background-color: #0059b3;
+  color: white;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.section {
+  padding: 4em 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.section p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2em;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #00264d;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  padding: 1em 0;
+}
+
+.footer a {
+  color: #80bfff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .section h2 {
+    font-size: 2em;
+  }
 }
