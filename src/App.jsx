@@ -8,7 +8,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import './index.css';
-//import './app.css'; // or './index.css' depending on which you want to use
 
 const App = () => {
   return (
