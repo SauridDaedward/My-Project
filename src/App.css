@@ -1,42 +1,171 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #00264d;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  background-color: #004080;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hero Section Styling */
+.hero {
+  background-color: #0059b3;
+  color: white;
+  padding: 4em 0;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero h1 {
+  font-size: 3em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Section Styling */
+.section {
+  padding: 4em 0;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.section h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
-.card {
+.section p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Button Styling */
+.button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
   padding: 2em;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Styling */
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #004080;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005bb5;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #00264d;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.footer a {
+  color: #80bfff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .section h2 {
+    font-size: 2em;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1em;
+  }
 }
