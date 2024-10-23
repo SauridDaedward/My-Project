@@ -168,4 +168,22 @@ body {
     flex-direction: column;
     gap: 1em;
   }
+
+  /* Chatbot Styling */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.contact-form {
+  margin-bottom: 2em;
+}
+
+.chatbot {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
 }
