@@ -1,42 +1,31 @@
+// src/pages/Projects.jsx
 import React from 'react';
 
-const projects = [
-  {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website to showcase my projects and skills.',
-    technologies: ['React', 'Vite', 'Materialize CSS'],
-    link: 'https://github.com/yourusername/portfolio-website'
-  },
-  {
-    title: 'Tic Tac Toe Game',
-    description: 'A Halloween-themed Tic Tac Toe game built with HTML, CSS, and JavaScript.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://github.com/SauridDaedward/TicTacToe'
-  },
-  {
-    title: 'Chatbot Project',
-    description: 'A chatbot built using React and Vite, customized with Materialize CSS.',
-    technologies: ['React', 'Vite', 'Materialize CSS'],
-    link: 'https://github.com/yourusername/chatbot'
-  }
-];
-
-function Projects() {
+const Projects = () => {
   return (
-    <div>
-      <h1>Projects</h1>
-      <div>
-        {projects.map((project, index) => (
-          <div key={index} style={{ marginBottom: '20px' }}>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <p><strong>Technologies:</strong> {project.technologies.join(', ')}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-          </div>
-        ))}
+    <div className="projects-container">
+      <h2>My Projects</h2>
+      <div className="projects-grid">
+        {/* Tic Tac Toe Game */}
+        <div className="project-card">
+          <h3>Tic Tac Toe</h3>
+          <p>Challenge yourself or a friend in a fun game of Tic Tac Toe!</p>
+          <a href="/game1.html" target="_blank" className="button">
+            Play Tic Tac Toe
+          </a>
+        </div>
+
+        {/* Rock, Paper, Scissors Game */}
+        <div className="project-card">
+          <h3>Rock, Paper, Scissors</h3>
+          <p>Play a classic game of Rock, Paper, Scissors against the computer!</p>
+          <a href="/game2.html" target="_blank" className="button">
+            Play Rock, Paper, Scissors
+          </a>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Projects;
